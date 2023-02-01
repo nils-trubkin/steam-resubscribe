@@ -46,6 +46,7 @@ def validate_form_data(w_id):
     if not cookies['steamLoginSecure']:
         raise ValueError('Steam login secure is required. Example: python resubscribe.py 123456789 -l 123456789')
 
+
 # Make a POST request to the target URL with the form data
 def post(url, w_id):
     validate_form_data(w_id)
